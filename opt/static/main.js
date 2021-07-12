@@ -66,3 +66,13 @@ $(function () {
         }
     });
 });
+
+$(function () {
+    $(document).on("click", "#pieChart", function () {
+        if ($(this).attr("data-pos") == "center"){
+            $(".amount_detail").delay(300).fadeIn(300);
+        } else {
+            $(".amount_detail").fadeOut(300);
+        }
+    })
+})
