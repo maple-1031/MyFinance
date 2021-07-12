@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../static/main.css">
+    <link rel="stylesheet" href="../static/chart.css">
+    <link rel="icon" href="../static/favicon_created_by_logaster.ico" id="favicon">
+    <!-- <script type="text/javascript" src="../../node_modules/chart.js/dist/chart.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="../static/chart.js"></script>
+    <script src="../static/pie.js"></script>
+    <script src="../static/stack.js"></script>
+    <meta charset="utf-8">
+    <title>MyFinance</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header"><img src="../static/logo.png" alt="MyFinance"></div>
+        <div class="main_header">
+            <div class="total_amount">
+                ￥ ---,---
+            </div>
+            <div id="pieChart" class="chart" data-pos="center"></div>
+        </div>
+        <div class="main_footer">
+            <div class="amount" id="payable_amount">
+                <div class="main_text">今月の支払い能力</div>
+                <div class="main_text">￥ --,---</div>
+            </div>
+            <div class="amount" id="payment">
+                <div class="main_text">今月の支払い</div>
+                <div class="main_text">￥ --,---</div>
+            </div>
+        </div>
+    </div>
+    <div class="amount_detail">
+        <div class="detail_title main_text">預金残高</div>
+        <div class="detail_sum main_text">￥ XX,XXX</div>
+        <div class="detail_chart" id="stack"></div>
+        <div class="detail_table">
+                <span class="main_text">みずほ銀行</span><span class="main_text">￥ XX,XXX</span>
+                <span class="main_text">みずほ銀行</span><span class="main_text">￥ XX,XXX</span>
+                <span class="main_text">みずほ銀行</span><span class="main_text">￥ XX,XXX</span>
+                <span class="main_text">みずほ銀行</span><span class="main_text">￥ XX,XXX</span>
+                <span class="main_text">みずほ銀行</span><span class="main_text">￥ XX,XXX</span>
+                <span class="main_text">みずほ銀行</span><span class="main_text">￥ XX,XXX</span>
+
+        </div>
+    </div>
+    <script src="../static/main.js"></script>
+</body>
+
+
+</html>
