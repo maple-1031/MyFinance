@@ -71,6 +71,7 @@ $(function () {
     $(document).on("click", "#pieChart", function () {
         if ($(this).attr("data-pos") == "center"){
             $(".amount_detail").delay(300).fadeIn(300);
+            draw_stacked_chart();
         } else {
             $(".amount_detail").fadeOut(300);
         }
