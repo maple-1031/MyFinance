@@ -1,12 +1,47 @@
-new Chart(document.getElementById('stack'), {
-    type: 'horizontalBar',
-    data: {
-      labels: ["Foo", "Bar"],
-      datasets: [
-        { label: "bad",    data: [5, 25],  backgroundColor: "rgba(244, 143, 177, 0.6)" },
-        { label: "better", data: [15, 10], backgroundColor: "rgba(255, 235, 59, 0.6)" },
-        { label: "good",   data: [10, 8],  backgroundColor: "rgba(100, 181, 246, 0.6)" }
-      ]
-    },
-    options: { stacked: "100%" }
-  });
+var data = {
+  labels: ["1月", "2月", "3月", "4月", "5月"],
+  datasets: [{
+      label: 'プリンター',
+      data: [880, 740, 900, 520, 930],
+      backgroundColor: 'rgba(255, 100, 100, 1)'
+  },
+  {
+      label: 'パソコン',
+      data: [1200, 1350, 1220, 1220, 1420],
+      backgroundColor: 'rgba(100, 100, 255, 1)'
+  }]
+};
+
+var options = {
+  scales: {
+      xAxes: [{
+          scaleLabel: {
+              display: true,
+              labelString: '月'
+          }
+      }],
+      yAxes: [{
+          ticks: {
+              min: 0,
+              userCallback: function(tick) {
+                  return tick.toString() + '台';
+              }
+          },
+          scaleLabel: {
+              display: true,
+              labelString: '台数'
+          }
+      }]
+  },
+  title: {
+      display: true,
+      text: '販売台数'
+  }
+};
+
+var ctx = document.getElementById("stack");
+var ex_chart = new Chart(ctx, {
+  type: 'horizontalBar',
+  data: data,
+  options: options
+});

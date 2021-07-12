@@ -7,7 +7,8 @@
     <link rel="icon" href="../static/favicon_created_by_logaster.ico" id="favicon">
     <!-- <script type="text/javascript" src="../../node_modules/chart.js/dist/chart.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="../static/chart.js"></script>
+    <!-- <script src="../static/chart.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
     <script src="../static/pie.js"></script>
     <script src="../static/stack.js"></script>
     <meta charset="utf-8">
@@ -37,14 +38,16 @@
     <div class="amount_detail" style="display: none;">
         <div class="detail_title main_text">預金残高</div>
         <div class="detail_sum main_text">￥ XX,XXX</div>
-        <div class="detail_chart" id="stack"></div>
+        <div class="graph_container" style="display: block;">
+            <canvas class="detail_chart" id="stack"></canvas>
+        </div>
         <div class="detail_table">
-                <span class="main_text">みずほ銀行</span><span class="main_text">￥ XX,XXX</span>
-                <span class="main_text">みずほ銀行</span><span class="main_text">￥ XX,XXX</span>
-                <span class="main_text">みずほ銀行</span><span class="main_text">￥ XX,XXX</span>
-                <span class="main_text">みずほ銀行</span><span class="main_text">￥ XX,XXX</span>
-                <span class="main_text">みずほ銀行</span><span class="main_text">￥ XX,XXX</span>
-                <span class="main_text">みずほ銀行</span><span class="main_text">￥ XX,XXX</span>
+            <span class="main_text">みずほ銀行</span><span class="main_text">￥ XX,XXX</span>
+            <span class="main_text">みずほ銀行</span><span class="main_text">￥ XX,XXX</span>
+            <span class="main_text">みずほ銀行</span><span class="main_text">￥ XX,XXX</span>
+            <span class="main_text">みずほ銀行</span><span class="main_text">￥ XX,XXX</span>
+            <span class="main_text">みずほ銀行</span><span class="main_text">￥ XX,XXX</span>
+            <span class="main_text">みずほ銀行</span><span class="main_text">￥ XX,XXX</span>
 
         </div>
     </div>
